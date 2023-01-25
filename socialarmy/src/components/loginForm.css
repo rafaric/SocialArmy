@@ -1,0 +1,77 @@
+.container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: fit-content;
+  padding: 35px 0;
+  /* From https://css.glass */
+  background: rgba(203, 89, 241, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(203, 89, 241, 0.37);
+}
+input{
+  width: 80%;
+  color: aliceblue;
+  background: transparent;
+  margin-bottom: 20px;
+  border-style: none;
+  border-bottom: 1px solid purple;
+  padding: 5px;
+
+}
+.pass{
+  display: flex;
+  width:85%;
+  justify-content: space-between;
+}
+
+::placeholder{
+  color: whitesmoke;
+  font-weight: 550;
+}
+input:focus, input:active{
+  color: aliceblue;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid purple;
+  font-weight: 700;
+}
+.MuiSvgIcon-root{
+  cursor:pointer; 
+}
+.btnlogin{
+  margin-top: 20px;
+  margin-bottom: 2px;
+  width: 140px;
+  padding: 10px;
+  border-radius: 15px;
+  color: white;
+  background-color: transparent;
+  border:1px solid purple
+}
+.btnlogin:hover{
+  backdrop-filter: blur(16.9px);
+  -webkit-backdrop-filter: blur(16.9px);
+  /*border: 1px solid rgba(203, 89, 241, 0.37);*/
+  font-size: 15px;
+  padding: 9px 0;
+  cursor: pointer;
+}
+.notregistered{
+  font-size: 12px;
+  font-weight: 350;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+}
+.notregistered a{
+  color: #a2c8ec
+}
+.notregistered a:hover{
+  color: #a2c8ec59;
+}

@@ -1,0 +1,24 @@
+.container-forms{
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+  width:100vw;
+  height: 100vh;
+  gap: 10px;
+}
+h1, h2{
+  text-align: center;
+}
+h1{
+  font-family: var(--header-font);
+  margin-top: 50px;
+  color: aliceblue;
+  font-size: 60px;
+}
+h2{
+  color: rgb(250, 198, 250);
+  font-weight: 800;
+  font-size: 16px;
+  margin-bottom: 50px;
+}

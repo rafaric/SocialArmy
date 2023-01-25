@@ -1,9 +1,25 @@
+@font-face {
+  font-family: 'monotonregular';
+  src: url('./assets/fonts/monoton-regular-webfont.woff2') format('woff2'),
+      url('./assets/fonts/monoton-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'solano-gotic';
+  src: url('./assets/fonts/SolanoGothicMVB-Bd.ttf');
+}
+:root{
+  --header-font: solano-gotic, serif;
+} 
 *{
   margin: 0;
   padding:0;
 }
 body {
+  background-image: url('./components/bglogin.jpg');
   
+  background-size:cover;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,7 +27,3 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
