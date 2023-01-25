@@ -7,9 +7,11 @@ import './registroForm.css'
 const RegistroForm = () => {
   const [email, setEmail] = useState('');
   const [pass, setPass] = useState('');
+  const [confpass, setConfpass] = useState('');
   const [fullname, setFullName] = useState('');
   const [adress, setAdress] = useState('');
   const [username, setUsername] = useState('');
+  const [gender, setGender] = useState('masculino');
   const [telefono, setTelefono] = useState('');
 
 
@@ -21,6 +23,12 @@ const RegistroForm = () => {
         placeholder='Ingrese su Nombre Completo'
         onChange={(e) =>setFullName(e.target.value)}
       />
+      <select className='genero'  onChange={(e)=>setGender(e.target.value)}>
+        <option value='' disabled selected hidden>Ingrese su genero:</option>
+        <option value='masculino'>Masculino</option>
+        <option value='femenino'>Femenino</option>
+        <option value='otro'>Otro</option>
+      </select>
       <input 
         type='text' 
         id='username'
@@ -55,7 +63,7 @@ const RegistroForm = () => {
         type='password2'
         id='pass2' 
         placeholder='Ingrese nuevamente la contraseña'
-        //onChange={(e)=>setPass(e.target.value)}
+        onChange={(e)=>setConfpass(e.target.value)}
       />
       <button 
         className='btnlogin' 

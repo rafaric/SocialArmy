@@ -1,0 +1,17 @@
+#pass{
+  width:80%
+}
+select{
+  color:whitesmoke;
+  width:83%;
+  background-color:transparent;
+  outline: none;
+  border:none;
+  border-bottom: 1px solid purple;
+  padding:0 0 0.5em 0;
+  margin-bottom: 12px;
+  font-weight: 550;
+}
+option{
+  background-color: purple;
+}

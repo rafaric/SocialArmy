@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom'
 import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 import './loginForm.css'
 
@@ -23,7 +24,8 @@ const LoginForm = () => {
           id='pass' 
           placeholder='Ingrese su contraseña'
           onChange={(e)=>setPass(e.target.value)}
-        /><VisibilityIcon onClick={()=> setShowPassword(!showPassword)} />
+        />
+        {showPassword ? <VisibilityOffIcon onClick={()=> setShowPassword(!showPassword)} /> : <VisibilityIcon onClick={()=> setShowPassword(!showPassword)} />}
       </div>
       <button 
       className='btnlogin' 
